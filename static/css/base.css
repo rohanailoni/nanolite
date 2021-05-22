@@ -61,3 +61,9 @@
 .li{
     background-image: linear-gradient(to bottom right, #0d68b8 , #3897eb);
 }
+.nav{
+    position: fixed;
+}
+#navbar{
+    position: fixed;
+}
