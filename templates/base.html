@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nanolite</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base1.css' %}">
+    <script src="https://kit.fontawesome.com/fb867dadd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+{% block body %}
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <img src="{% static 'images/img.png' %}" class="logo">
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="row">
+                        <div class="col">
+
+                                <div ><i class="fas fa-location-arrow loc"></i></div>
+                                <div ><h5>Hyderbad</h5></div>
+
+
+                        </div>
+                        <div class="col">
+
+                                <div ><i class="fas fa-envelope-open-text loc"></i></div>
+                                <div ><h5>sales@nanolite.in</h5></div>
+
+                        </div>
+                        <div class="col">
+
+                                <div ><i class="fas fa-phone loc"></i></div>
+                                <div ><h5>+91 94915 39933</h5></div>
+
+                        </div>
+                        <div class="col">
+
+                                <div ><i class="fas fa-phone loc"></i></div>
+                                <div ><h5>+91 94916 39933</h5></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+                <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
+                    <div class="container"> <a class="navbar-brand d-flex align-items-center" href="#">
+{#                    <svg width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">#}
+{#                    <g>#}
+{#                        <g>#}
+{#                            <path d="M511.981,118.509c-0.135-2.956-1.892-5.726-4.565-7.04l-159.24-79.62c-3.776-1.887-8.363-0.64-10.664,2.898 L229.916,200.282l-55.413-85.891c-0.796-1.235-1.945-2.264-3.259-2.922l-159.24-79.62C6.582,29.138,0,33.218,0,39.268v79.621 c0,4.581,3.712,8.294,8.294,8.294c4.581,0,8.294-3.712,8.294-.294V52.687l142.652,71.326v335.32L16.587,388.008V154.277	c0-4.581-3.712-8.294-8.294-8.294c-4.581,0-8.294,3.712-8.294,8.294v238.857c0,3.142,1.775,6.013,4.585,7.418l159.24,79.62	c5.427,2.714,12.003-1.375,12.003-7.418V318.087l324.17,162.085c5.427,2.714,12.003-1.375,12.003-7.418V118.888	C512,118.76,511.987,118.636,511.981,118.509z M175.827,299.541v-152.5l145.239,225.12L175.827,299.541z M495.413,459.335#}
+{#                            l-139.34-69.671l108.576-186.993c2.299-3.961,0.952-9.037-3.009-11.337c-3.96-2.298-9.036-0.953-11.337,3.009L344.094,377.258#}
+{#                            L239.77,215.555L347.383,49.998l144.717,72.359l-26.387,45.446c-2.299,3.961-0.952,9.037,3.009,11.337	c3.958,2.297,9.035,0.953,11.337-3.009l15.354-26.443V459.335z" fill="#000" />#}
+{#                        </g>#}
+{#                    </g>#}
+{#                    </svg>#}
+{#                <span class="ml-3 font-weight-bold">BRAND</span>#}
+                </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbar4">
+                <ul class="navbar-nav mr-auto pl-lg-4">
+                <li class="nav-item px-lg-2 active"> <a class="nav-link" href="#"> <span class="d-inline-block d-lg-none icon-width"></span>Home</a> </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>About</a> </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>TECHNOLOGY</a> </li>
+                <li class="nav-item px-lg-2 dropdown d-menu">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"></span>CLC Plant
+                <svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                </a>
+                <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Fully Automatic</a>
+                <a class="dropdown-item" href="#">Semi Automatic</a>
+                <a class="dropdown-item" href="#">Manual</a>
+                </div>
+                </li>
+                <li class="nav-item px-lg-2 dropdown d-menu">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"></span>Gallery
+                <svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                </a>
+                <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Photos</a>
+                <a class="dropdown-item" href="#">Videos</a>
+                </div>
+                </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>WHY CLC</a> </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>WHY NANOLITE</a> </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>CALCULATOR</a> </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>FAQ</a> </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>Quality</a> </li>
+
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"></span>Contact</a> </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+                <li class="nav-item"> <a class="nav-link" href="#">
+                  <i class="fab fa-twitter"></i><span class="d-lg-none ml-3">Twitter</span>
+                </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">
+                <i class="fab fa-facebook"></i><span class="d-lg-none ml-3">Facebook</span>
+                </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">
+                <i class="fab fa-instagram"></i><span class="d-lg-none ml-3">Instagram</span>
+                </a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">
+                <i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
+                </a> </li>
+                </ul>
+                </div>
+                </div>
+                </nav>
+
+
+
+                  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="{% static 'images/Screen Shot 2021-05-19 at 11.35.56 PM.png' %}" alt="Los Angeles" style="width:100%;" class="d-block w-100">
+                      </div>
+
+                      <div class="item">
+                        <img src="{% static 'images/Screen Shot 2021-05-19 at 11.36.11 PM.png' %}" alt="Chicago" style="width:100%;" class="d-block w-100">
+                      </div>
+
+                      <div class="item">
+                        <img src="{% static 'images/Screen Shot 2021-05-19 at 11.36.18 PM.png' %}" alt="New york" style="width:100%;" class="d-block w-100">
+                      </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                <div class="container">
+
+                </div>
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-3 col-3 first-column" data-aos="fade-up">
+                            <h1 class="lead mb-5">11+ YEARS OF EXPERIENCE IN MANUFACTURING BRICK MAKING MACHINES</h1>
+
+                        </div>
+                        <div class="col-md-3 col-3 first-column" data-aos="fade-down">
+                            <h1 class="lead mb-5 ">475+ BRICK PLANTS INSTALLED
+IN INDIA, NEPAL, BHUTAN & SRILANKA</h1>
+
+                        </div>
+                        <div class="col-md-3 col-3 first-column" data-aos="fade-right">
+                            <h1 class="lead mb-5 ">65+ UPCOMING PLANTS IN INDIA, NEPAL, BANGLADESH & SRILANKA</h1>
+
+                        </div>
+                        <div class="col-md-3 col-3 first-column" data-aos="fade-left">
+                            <h1 class="lead mb-4">ONE-STOP SHOP FOR ALL KINDS OF BRICK & BLOCK MAKING MACHINE</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+
+                </div>
+
+    <div class="grooper">
+        <div class="py-5 text-center text-white bg-primary">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mx-auto col-lg-10">
+                                <h1 class="display-4 mb-4 " data-aos="zoom-in-up">WELCOME TO NANOLITE </h1>
+                                <p class="lead mb-5" data-aos="zoom-in-down">We take the pleasure of introducing ourselves as the Pioneer & Leading Manufacturer of Cellular Light Weight Concrete (CLC) / Foam Concrete – Light Weight Bricks  / Blocks Making Machines.</p>
+                                <p class="lead mb-5" data-aos="zoom-in-up">We set up CLC Plants ranging from 5m<sup>3</sup> to 100m<sup>3</sup> in a very short span and with very less investment.</p>
+                                <p class="lead mb-5" data-aos="zoom-in-down">Nanolite was established in the year 2009 and has set-up 425+ Plants in almost all states of India and in Nepal & SriLanka</p>
+                                <p class="lead mb-5" data-aos="zoom-in-up">We are well known for our Quality Products, On-Time Delivery & Competitive Prices in both National & International Markets.</p>
+                                <p class="lead mb-5" data-aos="zoom-in-down">With the Experience & Expertise achieved through several years, we Guarantee Best Quality Brick / Block from the very 1st Batch of Production.</p>
+{#                                <a href="#" class="btn btn-lg btn-outline-light mx-1">Take#}
+{#                                me#}
+{#                                there</a>#}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mx-auto col-lg-10">
+                                <h1 class="display-4 mb-4 ">ACHIEVEMENTS Icons </h1>
+                                 <ul>
+                                     <li class="lead mb-5" data-aos="zoom-in-up">Introduced CLC / FOAM CONCRETE Technology In India</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-down">Installed 425+ CLC Brick Plants</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-up">Only company in India to set up more than 50 CLC Bricks Plants</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-down">1st to Set – Up Fully Automatic & Semi Automatic CLC Brick Plants</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-up">1st to Introduce Low Cost Foam Generators</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-down">1st to Introduce Mobile Type Plants</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-up">1st to Introduce Wire Cutting Machine for Battery Mold System</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-down">1st to Introduce Designer Molds with Brand Name / Logo for Bricks</li>
+                                     <li class="lead mb-5" data-aos="zoom-in-up">1st to Introduce Usage of Fibre in CLC Technology</li>
+                                 </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" data-aos="fade-down">
+            <div class="col-md-12">
+                <h1 style="text-align: center"><span class="line">TECHNOLOGY</span></h1>
+
+                <p class="lead mb-5">Cellular Light Weight Concrete (CLC) is a version of lightweight concrete that is produced like normal concrete under ambient conditions. It is produced by initially making slurry of Cement, Fly Ash, and Water which is further mixed with the addition of pre-formed stable foam in a blender concrete mixer under ambient conditions.</p>
+                <p class="lead mb-5">The amount of Cement, Fly-Ash, Foam & Water included in the Light Weight Cellular concrete mix design depends on the required properties (i.e. strength, thermal conductivity or durability). Also, depending on the required CLC density and variance, an appropriate mix design is selected.
+The hardened material consists of small-enclosed air bubbles thereby resulting in a light weight stable cellular material with densities ranging from as low 300 kg/m3 to 1800 Kg/m3</p>
+                <p class="lead mb-5">The mixture is either poured into assembled molds of blocks. The foam imparts free flowing characteristics to this slurry due to ball bearing effect of foam bubbles enabling it to easily flow into all corners and compact by itself in the molds without requiring any Kind of vibration or compaction.</p>
+                <p class="lead mb-5">Good Curing gives good strength and dimensional stability to Bricks. Bricks are cured by Water Curing procedure for 14 – 28 days. Because of great-Engineered properties, NANOLITE Bricks have become popular in wide range of applications in construction sector.</p>
+                <p class="lead mb-5 si" style="text-align: center;">Applications of Nanolite CLC Bricks</p>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"><i class="fas fa-check">400 – 600 Kg/m<sup>3</sup> : Insulation</i></div>
+                    <div class="col-md-4 col-sm-12"><i class="fas fa-check">800 – 1000 Kg/m<sup>3</sup> : Non-Load Bearing Walls</i></div>
+                    <div class="col-md-4 col-sm-12"><i class="fas fa-check">1200 – 1800 Kg/m<sup>3</sup> : Load Bearing Walls</i></div>
+
+                </div>
+                <br>
+                <p class="lead mb-5 si" style="text-align: center;">Advantages of Nanolite CLC Bricks</p>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                            <i class="fas fa-check ">Savings in Structural Foundation</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">High Thermal Insulation</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">High Compressive Strength</i>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Savings in Mortar & Plastering</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Good Sound Reduction</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Fire Protection</i>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Reduction of Dead Load</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Faster Construction</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Earthquake Resistant</i>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Less Water Absorption</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Enhances Carpet Area</i>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
+                            <i class="fas fa-check">Eco friendly</i>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+{% endblock %}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>

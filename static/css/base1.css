@@ -1,0 +1,60 @@
+.dropdown-toggle::after {
+    display: none;
+  }
+.text-decoration-none{
+  text-decoration: none!important;
+}
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width {
+    width: 2rem;
+}
+.logo{
+    position: relative;
+    height: 100px;
+    width: 150px;
+    top: 10px;
+    vertical-align: middle;
+}
+.loc{
+    display: flex;
+    justify-content: right;
+    border-color: #0a7ecc;
+    background-color: #0a86cb;
+    font-size: 15.84px;
+
+    height: 31.68px;
+    width: 31.68px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 0px;
+    /*width: 100px;*/
+    /*height: 100px;*/
+    line-height:100px;
+    text-align:center;
+
+}
+.first-column {
+    background: green;
+    color: white;
+    font-size: 2rem;
+    border-width:2px;
+    text-align: center;
+    background: #5851ff;
+    background-image: linear-gradient(to right, #0d68b8 , #3897eb);
+    border-color:#000;
+
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    align-items: center;
+    position: relative;
+    height: 256px;
+
+    border-radius: 55px;
+
+}
+.line{
+    border-bottom: 3px solid #ccc;
+}
+.si{
+    color: #0a86cb;
+
+}
